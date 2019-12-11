@@ -1,0 +1,66 @@
+#AboutMe {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: baseline;
+}
+
+#profile {
+  margin: 5% 50px 10px 5%;
+  border-radius: 50%;
+  align-self: flex-start;
+  max-width: 20%;
+  display: block;
+  height: auto;
+}
+
+h1 {
+  align-self: center;
+  color: pink;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 10vw;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  margin: 10 8% 10 8%;
+}
+
+.slideshow-container {
+  display: inline-flex;
+  height: 150px;
+  width: 75%;
+  background: pink;
+  margin: 5% 12.5% 5% 12.5%;
+  justify-content: space-between;
+}
+
+.next, .previous {
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 22px;
+  transition: color 0.4s ease;
+}
+
+.next:hover, .previous:hover {
+  color: black;
+}
+
+.dot {
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
