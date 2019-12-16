@@ -1,36 +1,98 @@
+/* Color scheme:
+  #EDC7B7 - dark peach
+  #EEE2DC - light peach
+  #BAB2B5 - stone grey
+  #123C69 - navy blue
+  #AC3B61 - maroonish */
+
+
 * {box-sizing: border-box}
 .mySlides {display:none}
 img {vertical-align: middle;}
 
-
-#AboutMe {
-  display: flex;
-  flex-direction: row;
+body {
+  background-color: #EEE2DC;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  align-items: baseline;
 }
 
-#profile {
-  margin: 5% 50px 10px 5%;
-  border-radius: 50%;
-  align-self: flex-start;
-  max-width: 20%;
-  display: block;
-  height: auto;
+.intro_page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
 
 h1 {
-  align-self: center;
-  color: pink;
+  color: #AC3B61;
   font-family: 'Shadows Into Light Two', cursive;
-  font-size: 10vw;
+  font-size: 40px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.end_page {
+  color: white;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+}
+
+.tree_container {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  text-align: center;
+  justify-content: center;
+  order: 3;
+}
+
+.intro_photo {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
+  color: #123C69;
   font-size: 15px;
+  position: absolute;
   text-align: justify;
-  margin: 10 8% 10 8%;
+  width: 20vw;
+  margin-top: 33vh;
+  margin-left: 1vw;
+  order: 2;
+}
+
+@media (max-width: 1200px) {
+  .intro_page {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro_photo {
+    max-height: 80%;
+    width: auto;
+    max-width: 100%;
+    padding-bottom: 5px;
+  }
+  .end_page {
+    color: white;
+    position: absolute;
+    right: 50%;
+    top: 70%;
+  }
+  p {
+    position: relative;
+    margin-top: 60vh;
+    width: 80vw;
+    align-self: center;
+    max-width: 800px;
+  }
 }
 
 .slideshow-container {
@@ -45,6 +107,10 @@ p {
   border-width: thick;
   border-style: solid;
   border-color: black;
+}
+
+.myslides:hover {
+
 }
 
 .mySlides p {
