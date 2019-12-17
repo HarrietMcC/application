@@ -1,0 +1,262 @@
+/* Color scheme:
+  #EDC7B7 - dark peach
+  #EEE2DC - light peach
+  #BAB2B5 - stone grey
+  #123C69 - navy blue
+  #AC3B61 - maroonish */
+
+
+/* * {box-sizing: border-box}
+.mySlides {display:none}
+img {vertical-align: middle;} */
+
+body {
+  background-color: #EEE2DC;
+}
+
+/* intro */
+.intro_page  {
+    width: 95vw;
+    height: 550px;
+    background-color: #fdfd96;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+h1 {
+  color: #AC3B61;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#intro_para {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 2%;
+  width: 15vw;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  color: #123C69;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.intro_photo {
+  position: absolute;
+  max-width: 80%;
+  height: auto;
+  max-height: 80%;
+  margin-left: 30%;
+  margin-top: 10vh;
+}
+
+.end_page {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  right: 5vw;
+  top: 50vh;
+}
+
+@media (max-width: 1200px) {
+  .intro_page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .intro_photo {
+    position: relative;
+    max-height: 75vh;
+    width: auto;
+    min-height: 250px;
+    margin: 60px 10% 50px 10%;
+    left: 0;
+  }
+
+  .end_page {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    z-index: 20;
+  }
+
+  #intro_para {
+    position: relative;
+    width: 85vw;
+    max-width: 1000px;
+    order: 3;
+    top: 0;
+    margin-top: -15px;
+  }
+
+
+}
+
+/* slideshow */
+.lower_page  {
+  width: 95vw;
+  height: 500px;
+  background-color: #aec6cf;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slideshow-container {
+  width: 75%;
+  background: orange;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border-width: thick;
+  border-style: solid;
+  border-color: black;
+  margin-top: 20px;
+  position: relative;
+}
+
+.mySlides {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: rgba(186, 178, 181, 0.7);
+}
+
+.slideshow-container:hover .overlay {
+  opacity: 1;
+}
+
+.slide_info {
+  color: rgba(172, 59, 97, 1);
+  font-size: 20px;
+  text-align: justify;
+  width: 75%;
+  position: absolute;
+  margin-left: 12.5%;
+  margin-top: 10%;
+}
+
+.next, .previous {
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 0.4s ease;
+  z-index: 1;
+  margin-top: 25%;
+}
+
+.next {
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .overlay {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+     background-color: rgba(186, 178, 181, 0.3);
+  }
+
+  .slideshow-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .slide_info {
+    color: rgba(172, 59, 97, 1);
+    font-size: 15px;
+    text-align: justify;
+    width: 100%;
+    position: relative;
+    left: -13%;
+    margin-top: 56%;
+
+  }
+}
+
+.dot {
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #EDC7B7;
+  transition: #123C69 0.6s ease;
+  margin-top: 2px;
+
+}
+
+.active, .dot:hover {
+  background-color: #123C69;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* arrow fade?? */
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* navigation links */
+.links{
+  text-align: center;
+  background-color: pink;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  align-self: flex-end;
+}
+
+.fab{
+  position: relative;
+	color: black;
+	font-size: 30px;
+	letter-spacing: 40px;
+	margin-top : 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+}
+
+.fab:hover {
+  transform: scale(0.9);
+}
