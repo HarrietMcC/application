@@ -277,19 +277,3 @@ h1 {
 .fab:hover {
   transform: scale(0.9);
 }
-
-/* mobile responsiveness */
-@media (max-width: 420px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  body {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .end_page {
-    display: none;
-  }
-}
