@@ -38,12 +38,12 @@ function autoSlide() {
   showSlides(slideIndex += 1);
 }
 
-//initialise: slideshow playing
-var play = true;
 // set timing of dispatch click events
 var scrollInterval,
    interval = 3000;
 
+
+//start in play
 changeStateOfPlay(play);
 
 function changeStateOfPlay(newStateOfPlay) {
